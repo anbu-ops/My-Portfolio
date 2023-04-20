@@ -1,25 +1,26 @@
-<nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+<nav class="navbar navbar-expand-lg fixed-top navbarScroll" style="background-color: darkslategray;">
   <div class="container">
-      <a class="navbar-brand" href="#">Portfolio</a>
+      <a class="navbar-brand cus-color" href="#">Ankit's Resume</a>
+      <button class="navbar-brand cus-svg" (click)="downloadMyResume()"><img src="../assets/download.svg"></button>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto">
-              <li class="nav-item active">
-                  <a class="nav-link" href="#home">Home</a>
+              <li class="nav-item active" >
+                  <a class="nav-link cus-color"href="#home">Home</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="#about">About</a>
+                  <a class="nav-link cus-color" href="#about">About</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="#services">Services</a>
+                  <a class="nav-link cus-color" href="#services">Services</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="#portfolio">Portfolio</a>
+                  <a class="nav-link cus-color" href="#portfolio">Portfolio</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="#contact">Contact</a>
+                  <a class="nav-link cus-color" href="#contact">Contact</a>
               </li>
           </ul>
           
@@ -34,7 +35,8 @@
       <div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
           <h2 class="hero_title">Hi, it's me Ankit</h2>
-          <p class="hero_desc">I am a professional Front-End developer</p>
+          <p class="hero_desc">I am a professional Front-End developer</p><p>as well as a Data enthusiast</p>
+          <p class="hero_desc"></p>
       </div>
       </div>
   </div>
@@ -47,27 +49,38 @@
       <h1 class="text-center">About Me</h1>
       <div class="row mt-4">
           <div class="col-lg-4">
-              <img class= "imageAboutPage" alt="">
+              <img src="../assets/background.jpg" class= "imageAboutPage" alt="">
           </div>
 
           <div class="col-lg-8">
-              <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged
-                  
-              </p>
               <div class="row mt-3">
-                  <div class="col-md-6">
-                      <ul>
-                          <li>Name: Ankit Banerjee</li>
-                          <li>Age: 25</li>
-                          <li>Occupation: Front-End Developer</li>
-
-                      </ul>
+                  <div class="col-md-12">
+                          <span>Name: Ankit Banerjee&nbsp;||&nbsp;</span>
+                          <span>Age: 25&nbsp;||&nbsp;</span>
+                          <span>Occupation: Front-End Developer&nbsp;||&nbsp;</span>
+                          <span>Experience: 3Y&nbsp;</span>
                   </div>
               </div>
+              <hr>
+              <p>I have worked in BFSI sector on Web development(Front-End | Angular) :</p>
               <div class="row mt-3">
-                  <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                  </p>
+                <div class="col-md-12">
+                <ul>
+                    
+                    <li>Build and owned one web application for an insurance company of
+                        South Africa using Angular, HTML and CSS, where different types of
+                        modern features of Frontend was included i.e. signaturePad (user can
+                        sign on that using mouse or touchscreen), different types of Forms, pdf
+                        download and upload, USSD, Carousel design.</li>
+                    <li>Managed and written codebases for a large scale web Application.
+                        I have experience on Dynatrace tool, which helps to monitor of entire
+                        infrastructure including hosts, processes, and network</li>
+                        <li>Handled lifecycle elements of system development, from conceptual planning stages through delivery and operation.Delivered dynamic technical solutions with meticulous attention to
+                            client requirements, enhancing company reputation and success.
+                        </li>
+
+                </ul>
+            </div>
               </div>
           </div>
       </div>
@@ -84,8 +97,8 @@
                   <div class="card-body">
                       <i class="fas servicesIcon fa-clock"></i>
                       <h4 class="card-title mt-3">Website Development</h4>
-                      <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                          Some quick example text to build on the card title and make up the bulk of the card's content.
+                      <p class="card-text mt-3">Worked and build quite a lot of robust single page web application
+                        using <b>Angular, HTML, CSS.</b> 
                       </p>
                   </div>
               </div>  
@@ -95,8 +108,7 @@
                   <div class="card-body">
                       <i class='fas servicesIcon fa-layer-group'></i>
                       <h4 class="card-title mt-3">Website Design</h4>
-                      <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                          Some quick example text to build on the card title and make up the bulk of the card's content.
+                      <p class="card-text mt-3">As a Front-End developer I have designed different web pages as per client's expection.
                       </p>
                   </div>
               </div>  
@@ -106,47 +118,47 @@
               <div class="card servicesText">
                   <div class="card-body">
                       <i class='far servicesIcon fa-check-circle'></i>
-                      <h4 class="card-title mt-3">Website Deployment</h4>
-                      <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                          Some quick example text to build on the card title and make up the bulk of the card's content.
+                      <h4 class="card-title mt-3">BAU</h4>
+                      <p class="card-text mt-3">I have good experience of working in BAU support, <b>ServiceNow</b> ticket solving etc. 
+
                       </p>
                   </div>
               </div>  
           </div>
       </div>
-
+      
       <div class="row">
+      <div class="col-lg-4 mt-4">
+        <div class="card servicesText">
+            <div class="card-body">
+                <i class='fas servicesIcon fa-shield-alt'></i>
+                <h4 class="card-title mt-3">DevOps</h4>
+                <p class="card-text mt-3">Wellversed in using <b>Git, Github, TFS,</b> branching and merging strategy as well as handling big codebases and repositories.
+                </p>
+            </div>
+        </div>  
+    </div>
+
+      
           <div class="col-lg-4 mt-4">
               <div class="card servicesText">
                   <div class="card-body">
                       <i class='fas servicesIcon fa-search'></i>
                       <h4 class="card-title mt-3">SEO</h4>
-                      <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                          Some quick example text to build on the card title and make up the bulk of the card's content.
+                      <p class="card-text mt-3">I have a good understanding how <b>BackEnd, Api calls, parallel Api calls, Oracle DataBase</b> works.
                       </p>
                   </div>
               </div>  
           </div>
 
-          <div class="col-lg-4 mt-4">
-              <div class="card servicesText">
-                  <div class="card-body">
-                      <i class='fas servicesIcon fa-shield-alt'></i>
-                      <h4 class="card-title mt-3">DevOps</h4>
-                      <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                          Some quick example text to build on the card title and make up the bulk of the card's content.
-                      </p>
-                  </div>
-              </div>  
-          </div>
 
           <div class="col-lg-4 mt-4">
               <div class="card servicesText">
                   <div class="card-body">
                       <i class='fas servicesIcon fa-wrench'></i>
-                      <h4 class="card-title mt-3">QA</h4>
-                      <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                          Some quick example text to build on the card title and make up the bulk of the card's content.
+                      <h4 class="card-title mt-3">Data Analysis</h4>
+                      <p class="card-text mt-3">Besides working as a Front-End developer, I have good skills on Data Analysis using <b>Python,R,SQL</b> and 
+                        Data Visualization in <b>Tableau</b>.
                       </p>
                   </div>
               </div>  
@@ -163,12 +175,11 @@
       <div class="row">
           <div class="col-lg-4 mt-4">
               <div class="card">
-                  <img class="card-img-top" src="My-portfolio/src/app/background.jpg" alt="Card image" style="width:100%">
+                  <img class="card-img-top" src="../assets/frontend.jpg" alt="Card image" style="width:100%">
                   <div class="card-body">
-                      <h4 class="card-title">YouTube Clone</h4>
-                      <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                      <h4 class="card-title">Front End</h4>
                       <div class="text-center">
-                          <a href="#" class="btn btn-success">Link</a>
+                          <a href="https://github.com/anbu-ops/My-Portfolio" class="btn btn-success">Link</a>
                       </div>
                   </div>
               </div>
@@ -176,12 +187,11 @@
 
           <div class="col-lg-4 mt-4">
               <div class="card portfolioContent">
-                  <img class="card-img-top" alt="Card image" style="width:100%">
+                  <img class="card-img-top" src="../assets/dataanalysis.jpg" alt="Card image" style="width:100%;height: 290px;">
                   <div class="card-body">
-                      <h4 class="card-title">Quiz App</h4>
-                      <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                      <h4 class="card-title">Data Analysis</h4>
                       <div class="text-center">
-                          <a href="#" class="btn btn-success">Link</a>
+                          <a href="https://github.com/anbu-ops/Rprojects" class="btn btn-success">Link</a>
                       </div>
                   </div>
               </div>
@@ -189,53 +199,11 @@
 
           <div class="col-lg-4 mt-4">
               <div class="card portfolioContent">
-                  <img class="card-img-top"  alt="Card image" style="width:100%">
+                  <img class="card-img-top" src="../assets/datavisalization.jpg" alt="Card image" style="width:100%">
                   <div class="card-body">
-                      <h4 class="card-title">Product Landing Page</h4>
-                      <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                      <h4 class="card-title">Data Visualization</h4>
                       <div class="text-center">
-                          <a href="#" class="btn btn-success">Link</a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <br>
-      <div class="row">
-          <div class="col-lg-4 mt-4">
-              <div class="card portfolioContent">
-                  <img class="card-img-top" alt="Card image" style="width:100%">
-                  <div class="card-body">
-                      <h4 class="card-title">Messaging Service</h4>
-                      <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                      <div class="text-center">
-                          <a href="#" class="btn btn-success">Link</a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-          <div class="col-lg-4 mt-4">
-              <div class="card portfolioContent">
-                  <img class="card-img-top" alt="Card image" style="width:100%">
-                  <div class="card-body">
-                      <h4 class="card-title">Twitter Clone</h4>
-                      <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                      <div class="text-center">
-                          <a href="#" class="btn btn-success">Link</a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-          <div class="col-lg-4 mt-4">
-              <div class="card portfolioContent">
-                  <img class="card-img-top" alt="Card image" style="width:100%">
-                  <div class="card-body">
-                      <h4 class="card-title">Blog App</h4>
-                      <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                      <div class="text-center">
-                          <a href="#" class="btn btn-success">Link</a>
+                          <a href="https://public.tableau.com/app/profile/ankit.banerjee/" class="btn btn-success">Link</a>
                       </div>
                   </div>
               </div>
@@ -244,21 +212,57 @@
       </div>
 </section>
 
+<!-- contact section-->
+<section id="contact">
+    <div class="container mt-3 contactContent">
+        <h1 class="text-center">Contact Me</h1>
+
+        <div class="row mt-4">
+            <div class="col-lg-6">
+                <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
+                <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;">
+                    <div id="embedmap-canvas" style="height:80%; width:80%;max-width:100%;">
+                        <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Kolkata,+West+Bengal,+India&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+                        </iframe>
+                    </div>
+                    <a class="googlemaps-html" href="https://www.embed-map.com" id="get-data-forembedmap">https://www.embed-map.com</a>
+                    <style>#embedmap-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}
+                    </style>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <!-- form fields -->
+                <form [formGroup]="FormData" (ngSubmit)="onSubmit()">
+                    <input type="text" class="form-control form-control-lg" placeholder="Name" formControlName="Name" required>
+                    <input type="email" class="form-control mt-3" placeholder="Enter email" formControlName="Email" required>
+                    <input type="text" class="form-control mt-3" placeholder="Subject" formControlName="Subject">
+                    <div class="mb-3 mt-3">
+                        <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details" formControlName="Details"></textarea>
+                    </div>
+                
+                <button type="submit" [disabled]="!FormData.valid" class="btn btn-success mt-3">Contact Me</button>
+            </form> 
+            </div>
+
+        </div>
+    </div>
+    </section>
+
 
  <!-- footer section-->
- <footer id="footer">
+ <br><br><br><br><br>
+ <footer id="footer" style="background-color: darkslategray;">
   <div class="container-fluid">
       <!-- social media icons -->
       <div class="social-icons mt-4">
-          <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-          <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-          <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="https://www.twitch.tv/" target="_blank"><i class="fab fa-twitch"></i></a>
+          <a href="https://github.com/anbu-ops" target="_blank"><img src="../assets/github.svg" style="margin-right: 20px;"></a>
+          <a href="https://www.instagram.com/ankit_13_b/" target="_blank"><img src="../assets/instagram.svg"style="margin-right: 20px;"></a>
+          <a href="https://www.facebook.com/ankit.banerjee.528/" target="_blank"><img src="../assets/facebook.svg"style="margin-right: 20px;"></a>
+          <a href="https://www.linkedin.com/in/ankit-banerjee-63657a1a7/" target="_blank"><img src="../assets/linkedin.svg"></a>
       </div>
   </div>
 </footer>
-
 
 
 <!-- <script>
