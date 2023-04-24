@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { EmailSetupService } from './email-setup.service';
 import { ReactiveFormsModule } from '@angular/forms';
+import { Contact } from './contact';
+// import { SplitPipe } from './split.pipe';
 
 
 @NgModule({
@@ -16,7 +18,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [EmailSetupService],
   bootstrap: [AppComponent]
