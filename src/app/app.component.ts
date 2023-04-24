@@ -1,10 +1,8 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { EmailSetupService } from './email-setup.service';
-import { HttpStatusCode } from '@angular/common/http';
-import { DatePipe } from '@angular/common';
 import { Contact } from './contact';
-import { Router, RouterEvent } from '@angular/router';
+import { Router } from '@angular/router';
 // import { SplitPipe } from './split.pipe';
 
 @Component({
@@ -101,13 +99,4 @@ pdfOpen(){
   window.open('../assets/Ankit_resume.pdf','_blank')
 }
 }
-
-// const sendContact = (e) => {
-//   e.preventDefault()
-//       axios.post('https://mailthis.to/rogeriorioli', contact).then(response => {
-//         window.location.href = 'https://mailthis.to/confirm'
-//       }).catch(err => {
-//         err = 'oh fuck '
-//       })
-// }
 

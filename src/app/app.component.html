@@ -55,7 +55,7 @@
       <h1 class="text-center">About Me</h1>
       <div class="row mt-4">
           <div class="col-lg-4">
-              <img src="../assets/My_picture.jpg" class= "imageAboutPage" alt="" style="border-radius: 50%;">
+              <img src="../assets/My_picture.jpg" class= "imageAboutPage" alt="" style="border-radius: 50%;width: 95%;">
           </div>
 
           <div class="col-lg-8">
@@ -360,10 +360,6 @@
             </div>
 
         </div>
-        <!-- <div class="service-error" *ngIf="error">
-            <h1>{{error.errorTitle}}</h1>
-            <h3>{{error.errorDesc}}</h3>
-          </div> -->
           <div [hidden]="!submitted" class="contact-message">
             <div *ngIf="contact_model.firstName" class="contact-success">
               <h2 class="success">Success!</h2>
@@ -377,7 +373,8 @@
 
  <!-- footer section-->
  <br><br><br><br><br>
- <footer id="footer" style="background-color: darkslategray;">
+ <footer style="background-color: darkslategray;
+ text-align: center;">
   <div class="container-fluid">
       <!-- social media icons -->
       <div class="social-icons mt-4">

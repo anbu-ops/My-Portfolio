@@ -2,7 +2,7 @@
 .bgimage {
     
     height: 100vh;
-    background-image: url(../assets/background.jpg);
+    background-image: url(../assets/background2.JPG);
     background-size:cover;
     position:relative;
 }
@@ -31,11 +31,6 @@
     color: white;
 }
 
-/* about section image css */
-.imageAboutPage {
-    width: 95%;
-}
-
 /* services section css */
 .servicesText.card {
     height: 200px;
@@ -60,24 +55,11 @@
     background-color: black;
 }
 
-/* social media icons styling */
 .social-icons {
     font-size: 36px;
     cursor: pointer;
 }
-.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
-    color: #008000;
-}
-.fab {
-    color: #000000;
-}
-/* footer styling */
-#footer {
-    background-color: #808080;
-    text-align: center;
-}
 
-/* spacing on all sections */
 #about, #services, #portfolio, #contact {
     margin-top: 4rem;
     padding-top: 4rem;
@@ -173,31 +155,5 @@ body{margin-top:20px;}
     width: 9px;
     content: "";
     top: 5px;
-}
-
-@media (max-width: 767px) {
-    .timeline .event:after {
-        left: -31.8px;
-    }
-}
-
-.rtl .timeline {
-    border-left: 0;
-    text-align: right;
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 4px;
-    border-top-left-radius: 4px;
-    border-right: 3px solid #727cf5;
-}
-
-.rtl .timeline .event::before {
-    left: 0;
-    right: -170px;
-}
-
-.rtl .timeline .event::after {
-    left: 0;
-    right: -55.8px;
 }
 
