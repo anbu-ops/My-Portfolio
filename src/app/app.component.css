@@ -30,7 +30,19 @@
     transform: translate(-50%, -50%);
     color: white;
 }
-
+.imageAboutPage{
+    src: url(../assets/My_picture.JPG);
+    border-radius: 50%;width: 95%;
+}
+.onthego{
+    src: url(../assets/dataanalysis.jpg);
+}
+.onthego1{
+    src: url(../assets/datavisalization.JPG);
+}
+.onthego2{
+    src: url(../assets/frontend.JPG);
+}
 /* services section css */
 .servicesText.card {
     height: 200px;

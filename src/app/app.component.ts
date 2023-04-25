@@ -1,8 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { APP_BOOTSTRAP_LISTENER, Component, HostListener, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { EmailSetupService } from './email-setup.service';
 import { Contact } from './contact';
 import { Router } from '@angular/router';
+import { bootstrapApplication } from '@angular/platform-browser';
+import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
+import { ngbCarouselTransitionIn } from '@ng-bootstrap/ng-bootstrap/carousel/carousel-transition';
 // import { SplitPipe } from './split.pipe';
 
 @Component({
@@ -11,6 +14,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+  isMenuCollapsed = true;
   title = 'My-portfolio';
   FormData = new FormGroup({
     firstName: new FormControl('',Validators.required),
@@ -70,11 +74,26 @@ export class AppComponent implements OnInit {
   contact_model:any = new Contact();
   submitted = false;
   error = {};
+  browserWidth!: number;
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event:any) {
+  this.browserWidth = event.target.innerWidth;
+  if(this.browserWidth<1000){
+    const navLinks = document.querySelectorAll('.nav-item')
+    const menuToggle = document.getElementById('navbarSupportedContent')
+  
+    navLinks.forEach((l) => {
+      l.addEventListener('click', () => { console.log(l) })
+  })
+  }
+  }
 
    constructor(private builder: FormBuilder,private contact: EmailSetupService,private router: Router,
     ){}
   
 ngOnInit(){
+  this.browserWidth = window.innerWidth;
   this.date = new Date();
     let day = this.date.getDate();
     let Month = this.date.getMonth()+1;
