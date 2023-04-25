@@ -25,3 +25,15 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## to build the we need to run command as:
+ng build --output-path docs  //where docs is the directory which is updated in angular.json in the field 'outputPath'.
+
+## to deploy in firebase we need to run command as::
+firebase deploy
+
+## my website URL is: 
+https://my-portfolio-alphaomega.web.app
+
+## my project console is:
+https://console.firebase.google.com/project/my-portfolio-alphaomega/overview
