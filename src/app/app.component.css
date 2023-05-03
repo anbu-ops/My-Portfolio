@@ -71,6 +71,10 @@
     font-size: 36px;
     cursor: pointer;
 }
+/* will make the icons slightly bigger */
+.social-icons :hover{
+    transform: scale(1.05);
+}
 
 #about, #services, #portfolio, #contact {
     margin-top: 4rem;
